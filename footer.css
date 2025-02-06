@@ -1,0 +1,27 @@
+ *{
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(5, 0, 0);
+}
+  
+   .fot{
+     
+    
+      background-color: rgb(93, 189, 171);
+         
+   }
+.fot:hover{
+  /* background-color: rgb(249, 254, 255); */
+  color: rgb(5, 0, 0);
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  box-shadow: 2px 5px rgb(10, 4, 4);
+}
+.ft{
+   text-decoration: none;
+}
+
+   
+  

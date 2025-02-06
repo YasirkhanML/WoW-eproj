@@ -1,0 +1,154 @@
+/* home */
+.bi{
+    padding: 10px;
+    height: 100px;
+    font-size: 20px;
+    color:   rgb(5, 0, 0) !important;
+
+}
+.bi:hover{
+    transform: scale(2.8);
+    transition: linear;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-decoration: underline ;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+}
+.navbar{
+    background: linear-gradient(rgb(65, 180, 159),rgb(93, 189, 171)); 
+}
+#log{
+    height: 30px;
+    width: 30px;
+    margin-right: 40px;
+}
+.icon{
+    margin-left: 20px;
+    font-size: 25px;
+    color:  rgb(5, 0, 0)!important; 
+}
+.icon:hover{
+    transform: scale(1.1);
+    transition: linear;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    /* text-decoration: underline ; */
+}
+.car{
+    height: 500px;
+
+}
+.car img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}   
+
+.col-3{
+    display: flex;
+    justify-content: stretch;
+}
+.container{
+    background-color: whitesmoke;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.head{
+    font-weight: bolder;
+    font-style: initial;
+    text-align: justifys;
+    font-style: oblique;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.img1{
+    height: 600px;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: center;
+}
+.para{
+     line-height: 1.5;
+    font-size: 20px;
+    font-weight: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+ #main-head{
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+    font-weight: 100px;
+} 
+
+#ahistory{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    padding-top: 50px;
+}
+.Aimg{
+    height: 200px;
+}
+.anci-head{
+    font-size: 60px;
+    font-weight: bolder;
+    font-style: initial;
+    color: #000000 !important;
+    text-align: justifys;
+    padding-top: 50px;
+}
+.anci-para{
+    line-height: 1.5;
+    text-align: justify; 
+    font-size: 20px;
+    font-weight: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+.his-anci{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+.card-Aimg{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: bottom 40px; ;
+}
+@media 
+{
+    
+}
+
+    
+
+

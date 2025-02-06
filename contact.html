@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        
+        
+        body {
+            font-family: Arial;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: beige;
+        }
+
+        .container {
+            width: 950px;
+            margin: 80px auto;
+            color: black;
+            line-height: 1.5;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            margin-top: 40px;
+        }
+        .nav-link{
+            margin-left: 20px;
+            font-size: 25px;
+            font-weight: 25px;
+            color:  rgb(5, 0, 0)!important; 
+        }
+
+        /* .icon {
+            background-color: black;
+            border-radius: 30px;
+            padding: 15px;
+            vertical-align: top;
+        } */
+
+        .contact-info {
+            display: inline-block;
+            padding: 4px 20px 0px 20px;
+        }
+
+        .address-line {
+            margin-top: 40px;
+        }
+
+        .col-1 {
+            width: 530px;
+        }
+
+        .col-2 {
+            flex: 1 1 auto;
+            background-color: white;
+        }
+
+        .form-container {
+            color: #000;
+            padding: 30px;
+        }
+
+        .contact-info-title {
+            color: #01bdd4;
+        }
+
+        .form-row {
+            padding-bottom: 30px;
+        }
+
+        .form-field {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        .send-btn {
+            border: 0px;
+            padding: 12px 26px;
+            background-color: #01bdd4;
+            color: white;
+        }
+
+        @media all and (max-width: 1024px) {
+            .container {
+                width: auto;
+                padding: 30px;
+            }
+            .col-1 {
+                width: 360px;
+            } 
+        }
+
+        @media all and (max-width: 700px) {
+            .content {
+                display: block;
+            }
+            .col-2 {
+                margin-top: 40px;
+            } 
+            .col-1 {
+                width: 100%;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- navbar strart   -->
+     <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./logooo.png" id="logo" alt="logoimg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active icon" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon" href="./ancient.html">Ancient History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon" href="./Wonature.html">Nature Wonders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon" href="./contact.html">Contact </a>
+              </li>
+              
+            </ul>
+            <!-- <li><a href=""><i class="bi bi-box-arrow-in-right" style="color: aliceblue;"></i></a></li> -->
+          <ul><a href="./login.html"><i class="bi bi-person-lines-fill" style="color: aliceblue;"></i></a></ul>
+           </div>
+        </div>
+      </nav>
+      <!-- navbar ended -->
+      <div class="container">
+        <div class="text-center">
+            <h1>Contact Us</h1>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore <div>et dolore magra aliqua.
+                Ut enim ad minim veniam.</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="col-1">
+                <div class="address-line">
+                    <i class="fa-solid fa-location-dot" onclick="getLocation()" style="cursor: pointer;"></i>
+                    <div class="contact-info">
+                        <div class="contact-info-title">Address</div>
+                        <div>1002 West 5th Ave,</div>
+                        <div>Alaska, North Naaimabad,</div>
+                        <div>55060.</div>
+                    </div>
+                </div>
+                <div class="address-line">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-info">
+                        <div class="contact-info-title">Phone</div>
+                        <div>0300-0099878</div>
+                    </div>
+                </div>
+                <div class="address-line">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="contact-info">
+                        <div class="contact-info-title">Email</div>
+                        <div>WOW012@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <form onsubmit="return validateForm()">
+                    <div class="form-container">
+                        <h2>Send Message</h2>
+                        <div class="form-row">
+                            <label>Full Name:</label>
+                            <div>
+                                <input type="text" id="name" class="form-field" placeholder="Enter your full name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Email:</label>
+                            <div>
+                                <input type="email" id="email" class="form-field" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Type your message...</label>
+                            <div>
+                                <textarea id="message" class="form-field" placeholder="Write your message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" class="send-btn" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- footer strart -->
+<div class="container-fluid fot">
+    <div class="row">
+     <div class="col-12 col-md-6 col-lg-3 p-4 ">
+      <img src="./logooo.png" alt="" style="height: 150px; margin-left: 25px; border-radius: 100px;" >
+     </div>
+
+
+     <div class="col-12 col-md-6 col-lg-3 p-3">
+        <h3 style="font-weight: bolder;" class="ft">Contact Us</h3>
+        <p class="ft"><i class="bi bi-envelope-heart-fill p-2 ft"></i>E.MAIL:wow@gmail.com</p>
+        <p class="ft"><i class="bi bi-telephone-fill p-2 ft"></i>PHONE:03117238668</p>
+        <p class="ft"><i class="bi bi-geo-alt-fill p-2 ft"></i>ADDRESS:street.5 beverly hills</p>
+
+
+
+     </div>
+
+     <div class="col-12 col-md-6 col-lg-3 p-3">
+        <h3 style="font-weight: bolder;" class="ft">Follow Us</h3>
+        <ul><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook "></i></a>Facebook</ul>
+        <ul><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram "></i></a>Instagram</ul>
+        <ul><a href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp "></i></a>Whatsapp</ul>
+        
+  
+     </div>
+  
+     <div class="col-12 col-md-6 col-lg-3 p-3">
+        <h3 style="font-weight: bolder;" class="ft">Topics</h3>
+         <ul >
+            <a href="./index.html" class="ft">Home</a>
+         </ul>
+         <ul >
+            <a href="./ancient.html" class="ft">Ancient History</a>
+        </ul>
+         <ul >
+            <a href="./Wonature.html" class="ft">wonder of Nature</a>
+        </ul>
+         <ul >
+            <a href="./about.html" class="ft">About us</a>
+         </ul>
+     </div>
+    </div>
+    </div>
+    <!-- footer end -->
+    <script>
+        function getLocation() {
+            const output = document.getElementById("output");
+
+            // Check if geolocation is available
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+
+                        // Display the fetched latitude and longitude
+                        output.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+
+                        // Open Google Maps centered on the fetched location
+                        const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+                        window.open(googleMapsUrl, '_blank');
+                    },
+                    (error) => {
+                        // Handle error scenarios
+                        switch (error.code) {
+                            case error.PERMISSION_DENIED:
+                                output.textContent = "User denied the request for Geolocation.";
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                output.textContent = "Location information is unavailable.";
+                                break;
+                            case error.TIMEOUT:
+                                output.textContent = "The request to get user location timed out.";
+                                break;
+                            case error.UNKNOWN_ERROR:
+                                output.textContent = "An unknown error occurred.";
+                                break;
+                        }
+                    }
+                );
+            } else {
+                output.textContent = "Geolocation is not supported by your browser.";
+            }
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    var fullName = document.getElementById('fullName').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    // Regular expression for alphabetic characters and spaces
+    var nameRegex = /^[A-Za-z\s]+$/;
+    // Regular expression for basic email validation
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (fullName === '' || email === '' || message === '') {
+        alert('All fields are required.');
+        return;
+    }
+
+    if (!nameRegex.test(fullName)) {
+        alert('Full Name can only contain alphabetic characters and spaces.');
+        return;
+    }
+
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // If all validations pass, you can submit the form or perform further actions
+    alert('Form submitted successfully!');
+    // For example, you can submit the form programmatically:
+    // this.submit();
+});
+
+function validateForm() {
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        let namePattern = /^[A-Za-z\s]+$/; // Only alphabets and spaces
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Valid email format
+
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill out all fields.");
+            return false;
+        }
+        if (!namePattern.test(name)) {
+            alert("Name can only contain alphabets.");
+            return false;
+        }
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email.");
+            return false;
+        }
+        if (message.split(" ").length < 10) {
+            alert("Message must contain at least 10 words.");
+            return false;
+        }
+
+        alert("Your data has been submitted successfully!");
+        return true;
+    }
+    </script>
+</body>
+</html>
